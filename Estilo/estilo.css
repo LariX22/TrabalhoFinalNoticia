@@ -277,13 +277,13 @@ html{
        font-size: 17px;
    }
    section{
-    max: width 80%;
+    max-width:80%;
     margin: 0 auto;
     padding: 0 2%;
     flex-wrap: wrap;
    }
    section#Exame{
-    max-width:80%;
+    max-width:65%;
     margin: 0 auto;
     padding: 0 2%;
     flex-wrap: wrap;
