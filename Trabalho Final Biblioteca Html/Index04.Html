@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros em Áudio</title>
+    <link rel="shortcut icon" href="Imagens/livro-aberto-em-branco-velho_1101-340.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="Estilos/style.Css">
+    <link rel="stylesheet" href="Estilos/Celular.Css" media="screen and (max-width:768px)">
+    <link rel="stylesheet" href="Estilos/Impressão.Css" media="print">
+    <link href="https://fontes.google.apis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <strong><ins><em><abbr title="Livros Diversos">LD</abbr></em></ins></strong>
+    <img src="imagens/cropped-logo-dark.png"id="Livro"> 
+    <header id="Menu">
+        <h1>Livraria Pública,sua Biblioteca Gratuita.</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">Menu</i>
+        <nav id="itens">
+            <a target="_blank" href="Index.Html">Livros de Aventura</a>
+            <a target="_blank" href="Index02.Html">Livros de Augusto-Cury</a>
+            <a target="_blank" href="Index03.Html">Livros Diversos</a>
+            <a target="_blank" href="Index04.Html">Livros em Áudio Mp3</a>
+            <a target="_blank" href="Cadastro.html">Formulário de Cadastro</a>
+        </nav>
+    </header>
+    <main>
+        <section><h2>Livros em Áudio</h2>
+          <div>
+            <h5 id="audio">A Cartomante</h5 >
+             <a target="_blank" href="https://www.universidadefalada.com.br//media/sample_audio/1799.mp3?t=1667429408">
+              <abbr title="A Cartomante-Machado de Assis"><img src="Imagens/A Cartomante.jpg" width="100px" height="150px">
+             </abbr></a>
+
+            <h5 id="audio">A Igreja do Diabo-Machado de Assis</h5>
+            <a target="_blank" href="https://www.universidadefalada.com.br/downloadable/download/sample/sample_id/663/">
+              <abbr title="A Igreja do Diabo-Machado de Assis"><img src="Imagens/A Igreja do Diabo.jpg" width="100px" 
+                    height="150px"></abbr></a>
+
+            <h5 id="audio">ABC da Mitologia-Uma noite com os Mitos</h5>
+            <a target="_blank" href="https://www.universidadefalada.com.br/downloadable/download/sample/sample_id/69/">               
+            <abbr title="ABC da Mitologia-Uma noite com os Mitos-Viktor Salis"><img src="Imagens/ABC.jpg" width="100px" 
+                height="150px"></abbr></a>
+
+            <h5 id="audio">As Roupas Novas do Imperador</h5>
+            <a target="_blank" href="https://www.universidadefalada.com.br/downloadable/download/sample/sample_id/660/">
+                <abbr title="As Roupas Novas do Imperador-Hans Christian Andersen"><img src="Imagens/As roupas.png"
+                     width="100px" height="150px"></abbr></a>
+            <h5 id="audio">A arte da guerra</h5>
+            <a target="_blank" href="https://youtu.be/DcBSpjw4NtA">
+                <abbr title="A arte da guerra-Sun Tzu"><img src="Imagens/A Arte da Guerra.jpg" width="100px" height="150px"></abbr></a>
+          </div>
+        </section>
+    </main> 
+    <script>
+        function clickMenu(){
+         if(itens.style.display == "block"){
+            itens.style.display = 'none'
+         } else {
+            itens.style.display = 'block'
+         }   
+          
+        }
+    </script>
+    <footer>
+        Davi Gonçalves
+    </footer>   
+</body>
+</html>

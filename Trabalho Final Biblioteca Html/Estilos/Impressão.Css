@@ -1,0 +1,26 @@
+html{
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+}
+img{
+   display:none;
+}
+nav >a{
+    display:none;
+}
+h1{
+    display: flexbox;
+    border-radius: 20px;
+}
+header{
+    width: 80%;
+    margin: auto;
+    border:5px solid black;
+    display: none;
+}
+abbr{
+    display: none;
+} 
+table{
+    width:100%;
+}   

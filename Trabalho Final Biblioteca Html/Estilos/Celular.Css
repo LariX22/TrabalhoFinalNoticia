@@ -1,0 +1,48 @@
+   
+body{
+    
+    background-color: rgb(197, 228, 215);
+    box-sizing: border-box;
+    text-align: auto;
+}
+abbr{
+    display: none;
+}
+img{
+    width:100px;
+    height:100px;
+    border: 6px solid rgb(119, 119, 136);
+}
+h1{
+    font-size:large;
+    color: rgb(6, 31, 21);
+    border: 2px solod black;
+}
+img#Livro{
+    display: none;
+}
+footer{
+    width: auto;
+}
+nav#a{
+    text-align:left;
+}
+a{
+    display: block;
+    text-align: left;
+}
+header{
+    text-align:left;
+}
+i#burguer{
+    text-align: left;
+}
+
+nav{
+    text-align: left;
+}
+
+nav>a{
+    width: 200px;
+    margin-left: 10px;
+}

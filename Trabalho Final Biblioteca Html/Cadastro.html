@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="shortcut icon" href="Imagens/livro-aberto-em-branco-velho_1101-340.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="Estilos/Style.Css">
+    <link rel="stylesheet" href="Estilos/Celular.Css" media="screen and (max-width:768px)">
+    <link rel="stylesheet" href="Estilos/Impressão.Css" media="print">
+    <link href="https://fontes.google.apis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="validar.js"></script>
+</head>
+<body>
+    <strong><ins><em><abbr title=" Formulário de Cadastro">FC</abbr></em></ins></strong > 
+    <img src="imagens/cropped-logo-dark.png" id="Livro">  
+    <header id="Menu">
+        <h1>Bibiloteca Gratuita Faça Seu Cadastro</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">Menu</i>
+        <nav id="itens">
+            <a target="_blank" href="Index.Html">Livros de Aventura</a>
+            <a target="_blank" href="Index02.Html">Livros de Augusto-Cury</a>
+            <a target="_blank" href="Index03.Html">Livros Diversos</a>
+            <a target="_blank" href="Index04.Html">Livros em Áudio Mp3</a>
+            <a target="_blank" href="Cadastro.html">Formulário de Cadastro</a>
+        </nav>
+    </header>
+    <main>
+        <section>           
+         <form name="cadastro" onsubmit="validarCadastro()">
+             <fieldset>           
+                <legend>Dados Pessoais</legend>
+                   <p>
+                    <label for="nome"> Nome: </label>
+                    <input type="text" name="nome" id="nome">
+                    <label for="sobrenome"> Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome">
+                    <label for="nome">Nascimento:</label>                    
+                    <input type="date" name="dia" size="2" maxlength="2" placeholder="dd"> 
+                    </p>
+                    <p>
+                    <label for="rg"> Rg: </label>
+                    <input type="text" name="rg" 
+                    placeholder="xxxxxxxxxx"> 
+                    </p>
+                    <p>
+                    <label for="icpf"> Cpf:</label>
+                    <input type="text" name="cpf" id="cpf"
+                    placeholder="xxx.xxx.xxx.xx">
+                    </p>
+                    <p>
+                        <label for="icelular"> Número de Celular:</label>
+                        <input type="text" name="númerodecelular" id="númerodecelular"
+                        placeholder="(xx)xxxxx-xxxx">
+                    </p>
+            </fieldset>
+                <fieldset>
+                    <legend>Dados de Endereço</legend>
+                </p>                  
+                <p>Rua:
+                    <input type="text" name="Rua" id="Rua" required></p>
+                <p>Bairro:
+                    <input type="text" name="Bairro" id="Bairro" required></p>
+                <p>Número:
+                    <input type="text" name="Número" id="Número" required></p>
+                <p>Complemento:
+                    <input type="text" name="Complemento" id="Complemento" required></p>
+                <p>Cidade:
+                    <input type="text" name="Cidade" id="Cidade" required></p>
+                <p>Estado:
+                  
+                    <select name="estado"> 
+                        <option value="ac">Acre</option> 
+                        <option value="al">Alagoas</option> 
+                        <option value="am">Amazonas</option> 
+                        <option value="ap">Amapá</option> 
+                        <option value="ba">Bahia</option> 
+                        <option value="ce">Ceará</option> 
+                        <option value="df">Distrito Federal</option> 
+                        <option value="es">Espírito Santo</option> 
+                        <option value="go">Goiás</option> 
+                        <option value="ma">Maranhão</option> 
+                        <option value="mt">Mato Grosso</option> 
+                        <option value="ms">Mato Grosso do Sul</option> 
+                        <option value="mg">Minas Gerais</option> 
+                        <option value="pa">Pará</option> 
+                        <option value="pb">Paraíba</option> 
+                        <option value="pr">Paraná</option> 
+                        <option value="pe">Pernambuco</option> 
+                        <option value="pi">Piauí</option> 
+                        <option value="rj">Rio de Janeiro</option> 
+                        <option value="rn">Rio Grande do Norte</option> 
+                        <option value="ro">Rondônia</option> 
+                        <option value="rs">Rio Grande do Sul</option> 
+                        <option value="rr">Roraima</option> 
+                        <option value="sc">Santa Catarina</option> 
+                        <option value="se">Sergipe</option> 
+                        <option value="sp">São Paulo</option> 
+                        <option value="to">Tocantins</option> 
+                       </select>
+                </p>
+                <p>Cep:
+                    <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
+                </fieldset>
+                <fieldset>
+                <legend>Dados de Login</legend>
+                <p>
+                <label for="email">E-mail: </label>
+                <input type="text" name="email">
+                </p>
+                <label for="imagem">Imagem de perfil:</label>
+                <input type="file" name="imagem">
+                </p>
+                <p>
+                    <label for="login">Login de usuário: </label>
+                    <input type="text" name="login">
+                <p>Senha:
+                    <input type="password" name="Senha" id="Senha" required minlength="6" maxlength="8"></p>
+                <p>Confirme a senha:
+                    <input type="password" name="Confirme a senha" required minlength="6" maxlength="8"></p>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Reserva de Livros</legend>
+                <p>Categorias:</p>                
+                 <p><input type="radio" name="aventura" id="icategoria">
+                  <label for="icategoria"> Aventura</label>                  
+                </p>
+                <p><input type="radio" name="aventura" id="icategoria">
+                  <label for="icategoria"> Augusto-Cury</label>
+                </p>
+                  <p><input type="radio" name="aventura" id="icategoria">
+                <label for="icategoria"> Diversos </label>
+            </p>
+                <p><input type="radio" name="aventura" id="icategoria" >
+                <label for="icategoria"> Audio Mp3</label>
+            </p>
+            </fieldset>
+             
+            <fieldset id="grupo1">
+                <legend>Autores</legend>
+                <p><input type="radio" name="imachado de assis" id="iautor">
+                    <label for="iautor"> Machado de Assis</label></p>
+                <p><input type="radio" name="imachado de assis" id="iautor">
+                    <label for="iautor"> Fernando Pessoa</label></p>
+                <p><input type="radio" name="imachado de assis" id="iautor">
+                    <label for="iautor"> Augusto Cury</label></p>
+                <p><input type="radio" name="imachado de assis" id="iautor">
+                    <label for="iautor"> Aristóteles</label></p>
+                <p><input type="radio" name="imachado de assis" id="iautor">
+                    <label for="iautor"> Júlio Verne</label></p>
+            </fieldset>
+
+            <fieldset id="grupo2">
+               <p><input type="radio" name="imachado de assis" id="iautor">
+                <label for="iautor"> Shakespeare</label></p>
+               <p><input type="radio" name="imachado de assis" id="iautor">
+                <label for="iautor"> Platão</label></p>
+               <p><input type="radio" name="imachado de assis" id="iautor">
+                <label for="iautor"> Alexandre Dumas</label></p>
+               <p><input type="radio" name="imachado de assis" id="iautor">
+                <label for="iautor"> Eduardo Menezes</label></p>
+               <p><input type="radio" name="imachado de assis" id="iautor">
+                <label for="iautor"> Ana Maria Magalhaes</label></p>
+            </fieldset> 
+
+            <fieldset id="grupo3">                    
+               <p><input type="radio" name="imachado de assis" id="iautor">
+                <label for="iautor"> Carlo Collodi</label></p>
+               <p><input type="radio" name="imachado de assis" id="iautor">
+                 <label for="iautor"> Rick Riordan</label></p>
+               <p><input type="radio" name="imachado de assis" id="iautor">
+                 <label for="iautor"> Arthur Conan Doyle</label></p>
+               <p><input type="radio" name="imachado de assis" id="iautor">
+                 <label for="iautor"> José Eduardo Ambra</label></p>
+               <p><input type="radio" name="imachado de assis" id="iautor">
+                 <label for="iautor"> Beto Junqueyra</label></p> 
+            </fieldset>
+             
+            <fieldset id="datas">
+                <legend>Datas:</legend>
+                <p>
+                    <label for="iempreśtimo"> Empréstimo</label>
+                    <input type="date" name="dia" size="2" maxlength="2" placeholder="dd"> 
+                    <label for="idevoluçaõ"> Devolução</label>
+                    <input type="date" name="dia" size="2" maxlength="2" placeholder="dd"> 
+                    <label for="ireserva"> Reserva</label>
+                    <input type="date" name="dia" size="2" maxlength="2" placeholder="dd"> 
+                    <label for="irenovação"> Renovação</label>  
+                    <input type="date" name="dia" size="2" maxlength="2" placeholder="dd">  
+                </p>
+                <p>                
+                    <input type="submit" value="ENVIAR">
+                    <input type="reset" value="LIMPAR">
+                 </p>
+            </fieldset> 
+            </form>
+        </section>
+    </main>
+    <script>
+        function clickMenu(){
+         if(itens.style.display == "block"){
+            itens.style.display = 'none'
+         } else {
+            itens.style.display = 'block'
+         }   
+          
+        }
+    </script>
+</body>
+</html>
