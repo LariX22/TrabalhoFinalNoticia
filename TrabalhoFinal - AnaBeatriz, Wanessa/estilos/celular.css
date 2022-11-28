@@ -1,0 +1,12 @@
+section{
+    background-color: rgb(238, 195, 195);
+}
+img{
+    width: 70px;
+    height: 70px;
+    padding: 12px;
+}
+div#img{
+    margin-left: 30%;
+   
+} 

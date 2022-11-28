@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital +VIDA - O nosso produto é a vida</title>
+    <link rel="shortcut icon" href="imagens/teste.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="estilos/impressao.css" media="print">
+    <link rel="stylesheet" href="estilos/celular.css" media="screen and (max-width:768px)" >
+</head>
+<body>
+    <header>
+        <div id="img"> 
+            <abbr title="(31) 9 1234-5678"><img src="imagens/zap.png" width="27px" height="27px" id="jilo"></abbr>
+            <abbr title="40028922"><img src="imagens/tel.png" width="27px" height="27px" id="jilo"></abbr>
+            <abbr title="maisvida@gmail.com"><img src="imagens/gmail.png" alt="" width="27px" height="27px" id="jilo"></abbr>
+        </div>
+        <h1>+VIDA</h1>
+        <h2>O Nosso Produto é a Vida</h2>
+        <img src="imagens/teste.png" width="110px" height="110px">
+        <nav>
+            <a href="index.html">Voltar Para a Página Inicial</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <H1>Agendamento de Consulta</H1>
+            <form>
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <p>
+                        <label for="inome">Nome Completo:</label>
+                        <input type="text" name="nome" id="inome"
+                        required>
+                    </p>
+                    <p>
+                        <label for="icpf">CPF</label>
+                        <input type="text" name="cpf:" id="icpf" placeholder="XXX.XXX.XXX-XX">
+                        
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Dados de Contato</legend>
+                    <p>
+                       <label for="icelular">Celular:</label>
+                       <input type="text" name="celular" id="icelular" placeholder="(XX)XXXXX-XXXX">
+                    </p>
+                    <P>
+                        <label for="iemail">E-mail:</label>
+                        <input type="email" name="email" id="iemail">
+                    </P>
+                </fieldset>
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <p>
+                        <label for="iendereço">Endereço:</label>
+                        <input type="text" name="enderenço" id="iendereço" placeholder="Rua, Praça, Avenida">
+                        <label for="ibairro">Bairro:</label>
+                        <input type="text" name="bairro" id="ibairro">
+                    </p>
+                    <p>
+                        <label for="inumero">Número:</label>
+                        <input type="text" name="numero" id="inumero">
+                        <label for="icep">CEP:</label>
+                        <input type="text" name="cep" id="icep">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Agendamento</legend>
+                    <p>
+                        <label for="idata">Data da Consulta</label>
+                        <input type="date" name="data" id="idata">
+                    </p>
+                    <p>
+                        <label for="ihorario">Horário:</label>
+                        <input type="time" name="horario" id="ihorario">
+                    </p>
+                    <p>
+                        <label for="iexame">Quantidade de Exames:</label>
+                        <input type="text" name="exame" id="iexame">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Dados de Acesso</legend>
+                    <p>
+                    
+                    <label for="iusuario">Nome de Usuário:</label>
+                    <input type="text" name="usuario" id="iusuario">
+                    </p>
+                    <p>
+                        <label for="isenha">Senha:</label>
+                        <input type="password" name="senha" id="isenha" minlength="4" maxlength="8" placeholder="min 4 e max 8 caracteres">
+                    </p>
+                    <p>
+                        <label for="isenha"> Confirme a Senha:</label>
+                        <input type="password" name="senha" id="isenha" minlength="4" maxlength="8">
+                    </p>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Exames a serem realizados</legend>
+                    <p>Marque as opções de exames</p>
+                   <p> <input type="checkbox" name="clinico" id="iclinico">
+                    <label for="iclinico">Exame Clinico</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="sangue" id="isangue">
+                        <label for="isangue">Exame de Sangue</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="audiometria" id="iaudiometria">
+                        <label for="iaudiometria">Audiometria</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="eletrocardiograma" id="ieletrocardiograma">
+                        <label for="ieletrocardiograma">Eletrocardiograma</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="grama" id="igrama">
+                        <label for="igrama">Eletroencefalograma</label>
+                    </p>
+                </fieldset>
+               <fieldset>
+                   <legend>Dados pregressos</legend>
+                   <p>O paciente possui alguma deficiência?</p>
+                   <p>
+                       <input type="radio" name="deficiencia" id="isim">
+                       <label for="isim">Sim</label>
+                       <input type="radio" name="deficiencia" id="inao">
+                       <label for="inao">Não</label>
+                   </p>
+                   <p>
+                       <p>Qual o sexo do paciente?</p>
+                       <input type="radio" name="paciente" id="imasculino">
+                       <label for="imasculino">Masculino</label>
+                       <input type="radio" name="paciente" id="ifeminino">
+                       <label for="ifeminino">Feminino</label>
+                   </p>
+                  </fieldset>
+                  <fieldset>
+                      <legend>Anexos</legend>
+                      <p>Anexe aqui as fotos dos seguites documentos:</p>
+                      <p>
+                          Identidade <label for="iarquivo"></label>
+                          <input type="file" name="arquivo" id="iarquivo">
+                      </p>
+                      <p>
+                          Carteira do Plano de Saúde <label for="iarquivo"></label>
+                          <input type="file" name="arquivo" id="iarquivo">
+                      </p>
+                  </fieldset>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>

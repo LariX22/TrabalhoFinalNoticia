@@ -1,0 +1,80 @@
+header{
+    text-align: center;
+    color: #590202;
+    border: 2px solid #A60A0A;
+    margin-bottom: 5px;
+    background-image: url(../imagens/chuchu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 1px 1px 1px #260101;
+    border-radius: 15px;
+}
+div#img{
+    margin-left: 90%;
+} 
+
+nav{
+    border: 2px solid #A60A0A;
+    font-size: 43px;
+}
+nav>a{
+    text-decoration: none;
+    color: #590202;
+    margin-right: 60px;
+}
+a:visited{
+    color:#590202 ;
+}
+a:hover{
+    color: rgb(250, 61, 61);
+}
+main>td,th{
+    color: #590202;
+    font-size: 23px;
+    text-shadow: 1px 1px 1px #260101 ;
+} 
+td,th{
+    text-align: center;
+}
+section>h1{
+color: #590202;
+text-shadow: 1px 1px 1px #260101;
+text-align: center;
+font-size: 52px;
+}
+section{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: justify;
+   font-size: 24px;
+    padding: 4px;
+    
+}
+main>p{
+color: #590202;
+text-shadow: 1px 1px 1px #260101;
+font-size: 25px;
+}
+main>h3{
+    color: #590202;
+text-shadow: 1px 1px 1px #260101;
+font-size: 35px;
+}
+
+footer{
+    text-align: center;
+    color: #590202;
+    font-size: 33px;
+}
+footer>h3{
+    text-align: justify;
+}
+
+img#danone:hover{
+    border: 3px solid #590202;
+    width: 250px;
+    height: 250px;
+}
+main{
+text-align: center;
+}
