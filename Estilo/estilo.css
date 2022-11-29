@@ -176,4 +176,129 @@ html{
         color:rgb(0, 0, 0);
         font-size:15px;
         font-style:italic;
-    
+    }
+
+    .menu-main{
+        width:100%;
+        background-color:rgb(103, 103, 255);
+        padding: 12px;
+    }
+    .menu-main a{
+        display: inline-block;
+        margin: 0 10px;
+        color: white;
+        text-decoration: none;
+    }
+    .menu-main a:hover{
+        text-decoration: underline;
+    }
+    .noticias-wraper-1{
+        display: flex;
+        width: 100%;
+    }
+    .noticia-destaque{
+        cursor: pointer;
+        width: 60%;
+        padding-top: 20%;
+        background-color: #222;
+        border: 2px solid white;
+        position: relative;
+    }
+    .noticia-destaque-single{
+        cursor: pointer;
+        left:0;
+        top:0;
+        position: absolute;
+        width:100%;
+        height:100%;
+        background-size:cover;
+        background-position:center;    
+    }
+
+    .noticia-destaque-single h3{
+        display: flex;
+        padding: 10px;
+        color: white;
+        width: 100%;
+        height: 40px;
+        background-color:rgba(0,0,0,0.6);
+    }
+    .outras-noticias-1{
+        cursor: pointer;
+        display: flex;
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    .outras-noticias-1-single{
+        cursor: pointer;
+        width: 50%;
+        padding-top:30%;
+        background-size: cover;
+        background-position: center;
+        border: 2px solid white;
+        background-color: #222;
+        position: relative;
+    }
+    a:valid{
+        color:blue;
+    }
+    a:hover{
+        color: white;
+    }
+    .outras-noticias-1-single h3{
+        padding: 10px;
+        color: white;
+        width: 100%;
+        height: 50px;
+        background-color:rgba(0,0,0,0.6);
+    }
+    p#anuncio{
+        color: #222;
+        font-size: 12px;
+    }
+    form#p{
+        font-family: 'Times New Roman', Times, serif;
+        color: #000;
+    }
+    form{
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 2%;
+        flex-wrap: wrap;
+        }
+    H1#Form{
+        display: flex;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 2%;
+        flex-wrap: wrap;
+    }
+   h3#outras-1{
+       font-size: 17px;
+   }
+   section{
+    max-width:80%;
+    margin: 0 auto;
+    padding: 0 2%;
+    flex-wrap: wrap;
+   }
+   section#Exame{
+    max-width:65%;
+    margin: 0 auto;
+    padding: 0 2%;
+    flex-wrap: wrap;
+    background-color:rgb(199, 199, 255);
+   }
+   section,a{
+    font-size: 14px;
+   }
+   a:hover#redefinir{
+    color: #222;
+   }
+   h1#Visão{
+       font-size: 25pt
+   }
+   h3#exame{
+       color: rgb(56, 56, 56)
+   }
+   
